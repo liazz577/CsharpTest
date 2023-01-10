@@ -7,17 +7,7 @@ using System.Threading.Tasks;
 namespace Exercise2
 {
     public class Tiger: Animal
-    {
-        public Tiger() { }
-
-        public override void Show()
-        {
-            base.Show();
-        }
-        public override void SetMe(int weight, string name)
-        {
-            Name = "Tiger";
-            Weight = 100;
-        }
+    { 
+        public Tiger(double weight, string name) : base(weight, name) { }
     }
 }

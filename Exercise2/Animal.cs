@@ -8,24 +8,22 @@ namespace Exercise2
 {
     public class Animal
     {
+        public double weight;
+        public string name;
         public Animal(double weight, string name)
         {
-            Weight = weight;
-            Name = name;
+            SetMe(weight, name);
         }
 
-        public double Weight { get; set; }
-        public string Name { get; set; }
-
-        public virtual void Show()
+        public void Show()
         {
-            Console.WriteLine("Name: " + Name + " " + "Weight: " + Weight);
+            Console.WriteLine("Name: " + name + ", " + "weight " + weight );
         }
 
         public void SetMe(double weight, string name)
         {
-            Weight = weight;
-            Name = name;
+            this.weight = weight;
+            this.name = name;
         }
     }
 }
